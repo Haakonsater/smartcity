@@ -1,0 +1,1645 @@
+[
+    {
+        "id": "1523fed4ca5a3921",
+        "type": "tab",
+        "label": "sensors",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c1c5444eef6cbe8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e30ba9aed246adc4",
+        "type": "tab",
+        "label": "zumo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "421de90ae5956cfc",
+        "type": "tab",
+        "label": "battery",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a7f82e8e354e6886",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7dcac430b85026f9",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e044c32d49dab4b5",
+        "type": "tab",
+        "label": "zumo battery",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "90334e26dccb6d75",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "89457c1cf8b0deaa",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5170f6165f4ce509",
+        "type": "ui_group",
+        "name": "Sensors",
+        "tab": "ef9145ea6bab3569",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e7b2ced2ae42f926",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d106f2f25cae81ec",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "ab8bf68015ae4b0b",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1b7e9d2a057f0389",
+        "type": "ui_group",
+        "name": "Battery",
+        "tab": "398021c994d79f8c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2278b9cb586bebeb",
+        "type": "ui_group",
+        "name": "Zumo",
+        "tab": "0a6f93ff4399e396",
+        "order": 3,
+        "disp": true,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "45dca4e9ce2411de",
+        "type": "ui_group",
+        "name": "zumo battery",
+        "tab": "398021c994d79f8c",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "05c2b41f25da7102",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/",
+        "instancehash": "hdvgowelhwwg9kyvgd9wc2xzahyhi52bged2iiswpbjnoqcy6ntd50h7eccs8bql",
+        "server": "nodered02.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "ef9145ea6bab3569",
+        "type": "ui_tab",
+        "name": "Sensors",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "398021c994d79f8c",
+        "type": "ui_tab",
+        "name": "battery",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a6f93ff4399e396",
+        "type": "ui_tab",
+        "name": "Zumo",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6b07ae9eec683561",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4bbd0f2b66569492",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "48ad2773dd456936",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f9d19eaec36e2458",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 9,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e3ac7bae9888daf6",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0c4a03da6ebd7296",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 11,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ba2cda1df2bc6a24",
+        "type": "ui_spacer",
+        "z": "421de90ae5956cfc",
+        "name": "spacer",
+        "group": "2278b9cb586bebeb",
+        "order": 12,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "bc03c2410cef3058",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e6bc67c54b8f49b3",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 5,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "bdd4a67d980d9b39",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e98f5d1add6b61a4",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "decbe7698541dfba",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8c84bfc3e5a1a8f1",
+        "type": "ui_spacer",
+        "z": "e044c32d49dab4b5",
+        "name": "spacer",
+        "group": "45dca4e9ce2411de",
+        "order": 10,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "9f8374dcfa709461",
+        "type": "mqtt in",
+        "z": "1523fed4ca5a3921",
+        "name": "",
+        "topic": "streetLight",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "e725e0aa7417d6e7"
+            ]
+        ]
+    },
+    {
+        "id": "b3a5707f3984e61b",
+        "type": "mqtt in",
+        "z": "1523fed4ca5a3921",
+        "name": "",
+        "topic": "temprature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "1d3f94728bb8a1eb"
+            ]
+        ]
+    },
+    {
+        "id": "965c6cd49f632019",
+        "type": "mqtt in",
+        "z": "1523fed4ca5a3921",
+        "name": "",
+        "topic": "trafficLight",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "f6688a750476e180"
+            ]
+        ]
+    },
+    {
+        "id": "15e16d727c287b81",
+        "type": "mqtt in",
+        "z": "1523fed4ca5a3921",
+        "name": "",
+        "topic": "streetLyte",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "0cf27e56f22be48c"
+            ]
+        ]
+    },
+    {
+        "id": "1d3f94728bb8a1eb",
+        "type": "ui_chart",
+        "z": "1523fed4ca5a3921",
+        "name": "",
+        "group": "5170f6165f4ce509",
+        "order": 1,
+        "width": 14,
+        "height": 4,
+        "label": "Temperature: celsius",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting data...",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e725e0aa7417d6e7",
+        "type": "ui_text",
+        "z": "1523fed4ca5a3921",
+        "group": "5170f6165f4ce509",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "streetlight sensor",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f6688a750476e180",
+        "type": "ui_text",
+        "z": "1523fed4ca5a3921",
+        "group": "5170f6165f4ce509",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trafficlight",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0cf27e56f22be48c",
+        "type": "ui_text",
+        "z": "1523fed4ca5a3921",
+        "group": "5170f6165f4ce509",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gatelys",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 320,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "755bc125a4454180",
+        "type": "mqtt in",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "topic": "currentSpeed",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "ced28c555a94e8a0",
+                "d346c64db86f7d3c",
+                "7815e17e981447ad"
+            ]
+        ]
+    },
+    {
+        "id": "ced28c555a94e8a0",
+        "type": "smooth",
+        "z": "e30ba9aed246adc4",
+        "name": "max",
+        "property": "payload",
+        "action": "min",
+        "count": "60",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "03650fb8d8cf0ce4"
+            ]
+        ]
+    },
+    {
+        "id": "d346c64db86f7d3c",
+        "type": "smooth",
+        "z": "e30ba9aed246adc4",
+        "name": "average",
+        "property": "payload",
+        "action": "mean",
+        "count": "60",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "ff9652e0cf277e26"
+            ]
+        ]
+    },
+    {
+        "id": "03650fb8d8cf0ce4",
+        "type": "ui_chart",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "group": "2278b9cb586bebeb",
+        "order": 8,
+        "width": 6,
+        "height": 4,
+        "label": "maximum speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 520,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff9652e0cf277e26",
+        "type": "ui_chart",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "group": "2278b9cb586bebeb",
+        "order": 7,
+        "width": 6,
+        "height": 4,
+        "label": "average speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 520,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7815e17e981447ad",
+        "type": "ui_gauge",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "group": "2278b9cb586bebeb",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "speed",
+        "label": "cm/s",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 310,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fbd2581d10f661b3",
+        "type": "mqtt in",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "topic": "over70",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 180,
+        "wires": [
+            [
+                "2890e16cf35f079b"
+            ]
+        ]
+    },
+    {
+        "id": "2890e16cf35f079b",
+        "type": "smooth",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "1",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "87bc666080810e27"
+            ]
+        ]
+    },
+    {
+        "id": "d5a80f587909cf5c",
+        "type": "mqtt in",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "topic": "distanceTravelled",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "bf40b62f0c8631f9"
+            ]
+        ]
+    },
+    {
+        "id": "87bc666080810e27",
+        "type": "ui_gauge",
+        "z": "e30ba9aed246adc4",
+        "name": "",
+        "group": "2278b9cb586bebeb",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "time spent over 70% speed",
+        "label": "s",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 460,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "48798d10d5065d43",
+        "type": "ui_text",
+        "z": "e30ba9aed246adc4",
+        "group": "2278b9cb586bebeb",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "meterstand",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bf40b62f0c8631f9",
+        "type": "function",
+        "z": "e30ba9aed246adc4",
+        "name": "function 2",
+        "func": "msg.payload = Math.round(msg.payload)/100;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "48798d10d5065d43"
+            ]
+        ]
+    },
+    {
+        "id": "7c873eedc374c30f",
+        "type": "ui_button",
+        "z": "421de90ae5956cfc",
+        "name": "midjo charge",
+        "group": "1b7e9d2a057f0389",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "midjo charge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "d0c969ddbd7a3352"
+            ]
+        ]
+    },
+    {
+        "id": "d0c969ddbd7a3352",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "midjoCharge",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 390,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6ef02da07e2f57bc",
+        "type": "ui_button",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "group": "1b7e9d2a057f0389",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "battery replacement",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 660,
+        "wires": [
+            [
+                "866c4fe2476cefe4"
+            ]
+        ]
+    },
+    {
+        "id": "79d410db9ff89a22",
+        "type": "ui_button",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "group": "1b7e9d2a057f0389",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "battery service",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "44502eefc0f9ee22"
+            ]
+        ]
+    },
+    {
+        "id": "daf63dfc892da522",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "normalCharge",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 400,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "44502eefc0f9ee22",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "batteryService",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 400,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "866c4fe2476cefe4",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "batteryReplacement",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 420,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f1359f19fd6685cc",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "currency",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 380,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "780c5c48ae4963ed",
+        "type": "mqtt in",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "currency",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "f1359f19fd6685cc"
+            ]
+        ]
+    },
+    {
+        "id": "52e2f80cbaafa758",
+        "type": "mqtt in",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "battery error",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "c260784f883db5c8"
+            ]
+        ]
+    },
+    {
+        "id": "c260784f883db5c8",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "error message",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 400,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "92f4504e3d0ac647",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "midjo charge: 400kr",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "25e500907623f4f3",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "normal charge price",
+        "label": "normal charge: 600kr",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c8cf19b5d8e8d95b",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "battery service price",
+        "label": "battery service: 3000kr",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 420,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ce829a2a2e7c4e27",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "battery replacement price",
+        "label": "battery replacement: 2000kr",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d2e74243b7e5a266",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "speedCharge",
+        "topic": "speedCharge",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 400,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1887e0730569d501",
+        "type": "ui_text",
+        "z": "421de90ae5956cfc",
+        "group": "1b7e9d2a057f0389",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "speed charge price",
+        "label": "speed charge: 800kr",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 410,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2386e68641a2d1fb",
+        "type": "ui_button",
+        "z": "421de90ae5956cfc",
+        "name": "normal charge",
+        "group": "1b7e9d2a057f0389",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "normal charge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "daf63dfc892da522"
+            ]
+        ]
+    },
+    {
+        "id": "c35f0fcc141ea7b2",
+        "type": "ui_button",
+        "z": "421de90ae5956cfc",
+        "name": "speed charge",
+        "group": "1b7e9d2a057f0389",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "speed charge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "d2e74243b7e5a266"
+            ]
+        ]
+    },
+    {
+        "id": "6fc4240d72e6bfae",
+        "type": "batch",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "mode": "count",
+        "count": "1",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 570,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cab8d6db45d4c42b",
+        "type": "debug",
+        "z": "421de90ae5956cfc",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "d36105577cd8d47f",
+        "type": "mqtt in",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "batteryLevel",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 820,
+        "wires": [
+            [
+                "55fc4a8624c549f5"
+            ]
+        ]
+    },
+    {
+        "id": "1840073c60c68f62",
+        "type": "mqtt out",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "topic": "percentCharge",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7b2ced2ae42f926",
+        "x": 560,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "55fc4a8624c549f5",
+        "type": "ui_slider",
+        "z": "421de90ae5956cfc",
+        "name": "",
+        "label": "Prosent lading",
+        "tooltip": "",
+        "group": "1b7e9d2a057f0389",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "1840073c60c68f62"
+            ]
+        ]
+    },
+    {
+        "id": "c24fe2cd1d04edb8",
+        "type": "mqtt in",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "topic": "batteryHealth",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "7b9401c97529faea",
+                "41462a39fa9159da"
+            ]
+        ]
+    },
+    {
+        "id": "d39298507897dc4a",
+        "type": "mqtt in",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "topic": "batteryLevel",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "3ddd86e3b2f96532"
+            ]
+        ]
+    },
+    {
+        "id": "4d7ad4a1642f0024",
+        "type": "mqtt in",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "topic": "batteryCycle",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "0ba864a65e1373c1"
+            ]
+        ]
+    },
+    {
+        "id": "7b9401c97529faea",
+        "type": "ui_gauge",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "group": "45dca4e9ce2411de",
+        "order": 12,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "battery health",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 400,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3ddd86e3b2f96532",
+        "type": "ui_gauge",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "group": "45dca4e9ce2411de",
+        "order": 11,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "battery level",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 330,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "41462a39fa9159da",
+        "type": "function",
+        "z": "e044c32d49dab4b5",
+        "name": "function 1",
+        "func": "if(msg.payload <= 5){\n    msg.payload = \"Warning: battery health low\";\n} else if(msg.payload < 15){\n    msg.payload = \"Warning: battery service needed\"\n} else{\n    msg.payload = \"\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "a4bd7d4ba4cd49e0"
+            ]
+        ]
+    },
+    {
+        "id": "a4bd7d4ba4cd49e0",
+        "type": "ui_text",
+        "z": "e044c32d49dab4b5",
+        "group": "45dca4e9ce2411de",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "warning",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 560,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0ba864a65e1373c1",
+        "type": "ui_text",
+        "z": "e044c32d49dab4b5",
+        "group": "45dca4e9ce2411de",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "batteryCycle",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "56a1dbd71add1d63",
+        "type": "mqtt in",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "topic": "environmentPoints",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "01336adf9fe76a6b"
+            ]
+        ]
+    },
+    {
+        "id": "01336adf9fe76a6b",
+        "type": "ui_gauge",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "group": "45dca4e9ce2411de",
+        "order": 4,
+        "width": 4,
+        "height": 3,
+        "gtype": "wave",
+        "title": "Environment Points",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0d7e71349f552d97",
+        "type": "mqtt in",
+        "z": "e044c32d49dab4b5",
+        "name": "",
+        "topic": "identification",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7b2ced2ae42f926",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "56a0b6c6acc96f1a"
+            ]
+        ]
+    },
+    {
+        "id": "56a0b6c6acc96f1a",
+        "type": "ui_text",
+        "z": "e044c32d49dab4b5",
+        "group": "45dca4e9ce2411de",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Identification",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    }
+]
